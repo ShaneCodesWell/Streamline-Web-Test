@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="C:\Users\Kuraudo\Desktop\Projects\Streamline\style.css">
+        <title>About Us</title>
+    </head>
+    <body>
+        <header>
+            <div class="navbar">
+                <div class="logo"><a href="./index.html">∫TREAMLINE</a></div>
+                <ul class="links">
+                    <li><a href="./pages/services.html">Services</a></li>
+                    <li><a href="./pages/about.html">About</a></li>
+                    <li><a href="./pages/contact.html">Contact</a></li>
+                </ul>
+                <a href="#" class="action_btn">Get Started</a>
+                <div class="toggle_btn">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+
+            <div class="dropdown_menu">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./pages/services.html">Services</a></li>
+                <li><a href="./pages/about.html">About</a></li>
+                <li><a href="./pages/contact.html">Contact</a></li>
+                    <li><a href="#" class="action_btn">Get Started</a></li>
+            </div>
+        </header>
+
+        <main>
+            <section class="about">
+                <div class="about-body">
+                    <img src="C:\Users\Shane\Desktop\Projects\Streamline\images\Assets\ShaneFinal.png">
+                    <div class="about-text">
+                        <h1>About Us</h1>
+                        <h5><span>Developer</span> & Designer</h5>
+                        <h3><span>Shane</span> Papa Kwesi Mensah</h3>
+                        <p>I am a front-end web developer. I can provide clean code and pixel perfect design. I also make the website & more interactive with web animations. I can provide clean code and pixel perfect design. I also make the wbsite more & more interactive with web animations. A responsive design makes your website accessible to all users, regardless of their device.</p>
+                        <button type="button">Lets's talk</button>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <script>
+            const toggleBtn = document.querySelector('.toggle_btn')
+            const toggleBtnIcon = document.querySelector('.toggle_btn i')
+            const dropDownMenu = document.querySelector('.dropdown_menu')
+
+            toggleBtn.onclick = function () {
+                dropDownMenu.classList.toggle('open')
+                const isOpen = dropDownMenu.classList.contains('open')
+
+                toggleBtnIcon.classList = isOpen
+                ? 'fa-solid fa-xmark'
+                : 'fa-solid fa-bars'
+            }
+        </script>
+    </body>
+</html>
