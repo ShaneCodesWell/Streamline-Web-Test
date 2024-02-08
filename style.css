@@ -19,7 +19,7 @@ li {
 a {
     text-decoration: none;
     color: #fff;
-    font: 1rem;
+    font-size: 1rem; /* Specify the unit explicitly */
 }
 
 a:hover {
@@ -189,14 +189,14 @@ section#home {
     z-index: 5;
 }
 
-.topline{
+.topline {
     display: block;
     position: relative;
-    font-size: 35px;
+    font-size: 3rem; /* Remove one of the font-size declarations */
     color: #fff;
-    font-size: 3rem;
     margin-bottom: 1rem;
 }
+
 
 .multiText{
     color: #fff;
